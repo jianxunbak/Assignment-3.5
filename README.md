@@ -1,4 +1,4 @@
-# Insert Lesson Title
+# Java: Class & Attributes
 
 ## Dependencies
 
@@ -10,11 +10,15 @@ Refer to the following markdown file for the respective sections of the class:
 ## Lesson Objectives
 
 Learners will understand:
-- Insert the knowledge to be acquired
+- What are classes and their use cases.
+- The difference between class and object.
+- What are accessor methods and how are they difference from the typical method?
 
 Learners will be able to:
-- Insert the skillset to be acquired
-
+- Implement a class and instantiate it.
+- Implement private properties to the class and its accessor methods.
+- Implement a class with constructor and instantiate it with default values.
+- Call a static and non-static member of a class.
 
 ## Lesson Plan
 
