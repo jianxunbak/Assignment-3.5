@@ -1,34 +1,6 @@
-## Brief
-
-### How to use the lesson sample code
-
-There are two folders prepared for the lesson. 
-- [Instructor's folder](./lesson-sample-code/instructor-demo-code)
-- [Learners' folder](./lesson-sample-code/learners-practice-code)
-
-Instructor to use the code provided for demonstration during the I DO segment. Learners will use the java file provided in the respective folder for practice during the WE DO segment.
-
-### Any other announcements to instructors or learners
-
----
-
-## Part 1 - Package creation
-
-Create a folder called lesson_sample_code and two files, Person.java and Main.java.
-
-In both files, add the line at the top
-
-```java
 package lesson_sample_code;
-```
 
----
-
-## Part 2 - Class attributes and methods
-
-In Person.java, add the following code and discussion:
-
-```java
+public class Person {
     //Classes and objects are the building blocks in OOP.
     //An object is a concept that has attributes (their properties) and methods (their actions).
     //Imagine a person, a person has attributes like name, age, gender and a person can perform actions like eat, sleep, run, etc. Each person is a unique object with their own properties and methods.
@@ -53,15 +25,7 @@ In Person.java, add the following code and discussion:
     public void eat(String meal){
         System.out.println("I am currently eating " + meal);
     }
-```
 
----
-
-## Part 3 - Class constructors
-
-Continue coding in Person.java to add both the empty and parameterized constructors.
-
-```java
     //Constructors are special method that are called when an object is instantiated (when the "new" keyword is used). The purpose of a constructor is to initialize values for the newly created object.
 
     //An empty constructor can be used to create an object without any values for its attributes
@@ -74,15 +38,7 @@ Continue coding in Person.java to add both the empty and parameterized construct
         this.gender = gender;
         this.isMarried = isMarried;
     } 
-```
 
----
-
-## Part 4 - Encapsulation, Accessor and Mutator Methods
-
-Continue coding in Person.java to explain the concept of encapsulation and accessor and mutator methods.
-
-```java
     //Encapsulation
     /*
         Encapsulation describes the bundling data and methods that work on that data within one unit, like a class in Java. This concept is also often used to hide the internal representation, or state of an object from the outside. This is called information hiding.
@@ -136,53 +92,10 @@ Continue coding in Person.java to explain the concept of encapsulation and acces
     public void setIsMarried(boolean isMarried){
         this.isMarried = isMarried;
     }
-```
 
----
-
-## Part 5 - Instantiation of objects
-
-In Main.java, create a new object using the constructor
-
-```java
-    Person person1 = new Person("John Smith", 35, "M", false);
-    //To create a new instance of the object, the "new" keyword is used.
-    //Syntax:
-    //Class variable = new Class(values); 
-```
-
----
-
-## Part 5 - Accessing object' properties and methods
-
-Add the following code to access the properties and methods of the object.
-
-```java
-    //To access the object's attributes, the dot notation is used together with the getter method.
-    System.out.println("Person 1's age is :" + person1.getAge());
-
-    //To change the value of an attribute, the setter method is used
-    person1.setIsMarried(true);
-
-    //To use the methods on an object, use the dot notation.
-    person1.eat("Burrito");
-    person1.greet();
-```
-
----
-
-## Part 6 - Static keyword
-
-In Person.java, add the following method:
-```java
     //Static keyword is used to mark the variable or method available at the class level. In other words, there is no need to create an instance of the class to access it.
     public static void printObject(){
         System.out.println("I am a Person Object");
     }
-```
 
-In Main.java, add the following line:
-```java
-//To use a static method, the class itself is called instead of the object instance.
-        Person.printObject();
-```
+}
