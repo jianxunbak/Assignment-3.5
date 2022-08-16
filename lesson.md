@@ -3,7 +3,7 @@
 ### How to use the lesson sample code
 
 There is one folder prepared for the lesson. 
-- [Instructor's folder](./lesson-sample-code/)
+- [Instructor's folder](./lesson_sample_code/)
 
 Instructor to use the code provided for demonstration during the I DO segment. Learners will use the java file provided in the respective folder for practice during the WE DO segment.
 
@@ -13,7 +13,7 @@ Instructor to use the code provided for demonstration during the I DO segment. L
 
 ## Part 1 - Package creation
 
-Create a folder called lesson_sample_code and two files, Person.java and Main.java.
+Create a working project folder and add two files, `Person.java` and `Main.java`.
 
 In both files, add the line at the top
 
