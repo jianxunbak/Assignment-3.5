@@ -76,7 +76,6 @@ public class Person {
 
   public void greet() {
     System.out.println("Hello world, I'm " + name + " and I'm a " + age + " year old " + gender + ".");
-    System.out.println(isMarried ? "I'm married." : "I'm not married.");
   }
 
   public void eat(String meal) {
@@ -146,7 +145,7 @@ public Person(String name, int age, String gender, boolean isMarried) {
 With the constructor defined, we can now instantiate the `Person` object with the values that we want.
 
 ```java
-public class MyApp {
+public class App {
   public static void main(String[] args) {
     Person tony = new Person("Tony Stark", 35, "male", false);
 
@@ -251,7 +250,7 @@ In the previous lesson, we learned how to use access modifiers to control access
 | `protected`    | accessible from within the class and subclasses |
 | blank          | accessible from within the class and package    |
 
-Currently, we can access attributes directly from the `MyApp` class.
+Currently, we can access attributes directly from the `App` class.
 
 ```java
 System.out.println(tony.name);
@@ -269,7 +268,7 @@ private String gender;
 private boolean isMarried;
 ```
 
-The moment we do this though, we will get an error in the `MyApp` class because we can no longer access the attributes directly. This is because the attributes are now set to `private`.
+The moment we do this though, we will get an error in the `App` class because we can no longer access the attributes directly. This is because the attributes are now set to `private`.
 
 How do we access them then? This is where **accessor** and **mutator** methods come in. These are more commonly known as **getters** and **setters** respectively. These methods are used to access and modify the values of the attributes.
 
@@ -463,7 +462,7 @@ The `@Override` annotation is used to indicate that the method is overriding a m
 
 A Plain Old Java Object (POJO) is a simple object used to represent data in a Java program.
 
-We define it using the `class` keyword with a set of attributes and correspdonding getters and setters.
+We define it using the `class` keyword with a set of attributes and corresponding getters and setters.
 
 Take for example, an expense object.
 
