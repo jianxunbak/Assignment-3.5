@@ -550,7 +550,7 @@ This time, we will create a `VendingMachine` class to represent the vending mach
 It should have the following attributes:
 
 - `String location` - location of vending machine
-- ` double earnings` - total earnings of machine
+- `double earnings` - total earnings of machine
 - `double balance` - how much money user has inserted
 
 Methods:
