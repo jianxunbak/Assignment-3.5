@@ -346,7 +346,7 @@ It is good practice to keep fields private and provide getters and setters to ac
 
 This is one of the principles of Object Oriented Programming (OOP) - **Encapsulation**.
 
-<img src="https://prepinsta.com/wp-content/uploads/2023/05/Encapsulation.webp" width=500>
+<img src="https://files.prepinsta.com/2023/05/Encapsulation.webp" width=500>
 
 Source: https://prepinsta.com/java/encapsulation/
 
