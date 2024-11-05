@@ -56,6 +56,15 @@ public class Person {
 }
 ```
 
+#### Access Modifiers for Classes
+
+Classes also have access modifiers. The access modifier controls the visibility of the class.
+
+| Access Keyword | Description                        |
+| -------------- | ---------------------------------- |
+| `public`       | accessible from anywhere           |
+| blank          | accessible from within the package |
+
 ### Methods and Attributes
 
 When we talk about objects in the real world e.g. a car, a dog, a house, etc. we can describe it in terms of its **state** and its **behaviour**.
@@ -236,6 +245,24 @@ Then to invoke the copy constructor, we pass in an object of the same class.
 ```java
 Person bruceClone = new Person(bruce);
 ```
+
+---
+
+## 👨‍💻 Activity
+
+Create a `Car` class with the following attributes:
+
+- `String make`
+- `String model`
+- `int year`
+- `double price`
+
+Create the following constructors:
+
+- no-argument constructor
+- constructor that takes in `make`, `model`, `year` and `price`
+- constructor that takes in `make`, `model` and `year` and sets the price to 0
+- copy constructor
 
 ---
 
@@ -458,6 +485,16 @@ The `@Override` annotation is used to indicate that the method is overriding a m
 
 ---
 
+## 👨‍💻 Activity
+
+Continue with the `Car` class from the previous activity.
+
+1. Encapsulate the attributes and provide accessor and mutator methods.
+1. Add a `static` attribute to keep track of the number of cars instantiated and a corresponding static method to get the value.
+1. Override the `toString` method to return a string representation of the object.
+
+---
+
 ## Part 6: Intro to the POJO
 
 A Plain Old Java Object (POJO) is a simple object used to represent data in a Java program.
@@ -552,6 +589,8 @@ It should have the following attributes:
 - `String location` - location of vending machine
 - `double earnings` - total earnings of machine
 - `double balance` - how much money user has inserted
+
+It should have a constructor that takes the location as a parameter and initializes the earnings and balance to 0.
 
 Methods:
 
