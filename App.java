@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) {
         // String name1 = "Tony Stark";
@@ -42,6 +45,38 @@ public class App {
         Person Allen = new Person();
         System.out.println("person count: " + Person.getPersonCount());
         System.out.println(tony.toString());
+
+        // using the POJO
+        ArrayList<Expense> expenses = new ArrayList<>();
+        expenses.add(new Expense("food", 100));
+        expenses.add(new Expense("transport", 500));
+        System.out.println(expenses);
+
+        // using record
+        ArrayList<ExpenseR> expenses2 = new ArrayList<>();
+        expenses2.add(new ExpenseR("food", 100));
+        expenses2.add(new ExpenseR("transport", 500));
+        System.out.println(expenses2);
+
+        ExpenseR expenses3 = new ExpenseR("food", 10.5);
+        expenses3.name();
+        expenses3.amount();
+
+        System.out.println("\nVending Machine");
+        VendingMachine ntuVendingMachine = new VendingMachine("NTU");
+
+        ntuVendingMachine.insertCoin(1);
+        ntuVendingMachine.selectDrink(Drink.COKE); // should not dispense, insufficient payment
+        ntuVendingMachine.insertCoin(0.5);
+        ntuVendingMachine.selectDrink(Drink.COKE);
+
+        ntuVendingMachine.insertCoin(0.5); // should not dispense, insufficient payment
+        ntuVendingMachine.selectDrink(Drink.WATER);
+        ntuVendingMachine.insertCoin(1);
+        ntuVendingMachine.selectDrink(Drink.WATER);
+
+        ntuVendingMachine.printEarnings();
+        ntuVendingMachine.printTransactions();
 
     }
 
